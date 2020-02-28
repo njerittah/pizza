@@ -3,14 +3,22 @@
 
 
 
-function Size(xl,large,medium, small){
-  this.xl=xl
-  this.large= large
-  this.medium= medium
-  this.small= small
+
+
+function Pizza(size,crust,Toppings){
+  this.size = size;
+  this.crust = crust;
+  this.toppings = toppings;
 }
 
-function Crust(thin,flatbread,focaccia,custom,glutenfree){
+function Size(xl=2000,large=1500,medium=1000, small=500){
+  this.xl=xl;
+  this.large= large;
+  this.medium= medium;
+  this.small= small;
+}
+
+function Crust(thin=100,flatbread=200,focaccia=200,custom=150,glutenfree=300){
   this.thin="thin"
   this.flatbread="flatbread"
   this.focaccia="focaccia"
@@ -18,22 +26,16 @@ function Crust(thin,flatbread,focaccia,custom,glutenfree){
   this.glutenfree= "glutenfree"
 }
 
-
-
-
-<option>Thin</option>
-<option>Flat Bread</option>
-<option>Thick</option>
-<option>Focaccia</option>
-<option>Authentic WoodFried</option>
-<option>Custom</option>
-<option>Gluten Free</option>
-function Toppings(pepperoni, mushrooms, onions, sausage, bacon, black olives, green peppers){
+function Toppings(pepperoni, mushrooms, onions, sausage, bacon, blackolives, greenpeppers){
 this.pepperoni= pepperoni
 this.mushrooms= mushrooms
 this.onions= onions
 this.sausage= sausage
 this.bacon = bacon
-this.blackolives= black olives
-this.greenpeppers= green peppers
+this.blackolives= blackolives
+this.greenpeppers= greenpeppers
 }
+
+$(document).ready(function(){
+  $("form").submit(function() {
+var size=$("#fname").val()
