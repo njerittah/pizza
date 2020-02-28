@@ -38,6 +38,6 @@ this.greenpeppers= greenpeppers
 
 $(document).ready(function(){
   $("form").submit(function() {
-var size=$("#fname").val()
-var crust = $().val()
+var size=$("#siz").val()
+var crus = $("#crus").val()
 var toppings= $().val()
