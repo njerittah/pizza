@@ -36,9 +36,9 @@ this.blackolives= blackolives
 this.greenpeppers= greenpeppers
 }
 
-var
 
 $(document).ready(function(){
+
   $("form").submit(function() {
 var size=$("#siz").val()
 var crus = $("#crus").val()
@@ -47,5 +47,6 @@ var number=$("#num").val()
 var deliver=$("#deliv").val()
 
 
-var =$("#num").val()
+var =$("#numb").val()
 var delive = $("#deliv").val()
+)};
