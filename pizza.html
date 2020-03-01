@@ -1,86 +1,51 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza Munchy</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
     <div class="container">
-  <h2>Pizza Size</h2>
-  <form id="siz">
-      <div class="radio">
-        <label><input type="radio" name="optradio" checked> Extra Large</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Large</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Medium</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Small</label>
-      </div>
-      </div>
-</form>
-</div>
-    <div class="container">
-      <h2>Exquisite Crusts</h2>
-      <form>
-        <div class="form-group" id="crus">
-        <label for="sel1">Select Crust:</label>
-        <select class="form-control" id="sel1">
-          <option>Thin</option>
-          <option>Flat Bread</option>
-          <option>Thick</option>
-          <option>Focaccia</option>
-          <option>Authentic WoodFried</option>
-          <option>Custom</option>
-          <option>Gluten Free</option>
-          </select>
-        </form>
-        <form id ="toppin">
-          <h1>Exortic Toppings</h1>
-          <label for="sel2">Toppings select list (hold shift to select more than one):</label>
-          <select multiple class="form-control" id="sel2">
-          <option>Pepperoni</option>
-          <option>Mushrooms</option>
-          <option>Onions</option>
-          <option>Sausage</option>
-          <option>Bacon</option>
-          <option>Black Olives</option>
-          <option>Green Peppers</option>
-        <form>
-
-
-      <form id="numb">
-        <h1>No. Of Pizzas</h1>
-      </select>
-      <div class="form-group">
-      <label for="usr">Number of Pizzas:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
+        <div id="order">
+            <hr>
+            <form>
+                <label>Pizza Size:</label>
+                <select class="form-control" id="size">
+                    <option>SELECT PIZZA SIZE </option><br>
+                    <option value="Large">LARGE KSH 600</option>
+                    <option value="Medium">MEDIUM KSH 500</option>
+                    <option value="Small">SMALL KSH 300 </option>
+                </select><br><br>
+                <label>Pizza Crust:</label>
+                <select class="form-control" id="crust">
+                    <option>SELECT PIZZA CRUST </option><br>
+                    <option value="Crispy">CRISPY </option>
+                    <option value="Stuffed">STUFFED </option>
+                    <option value="Glutten-free">GLUTEN FREE </option>
+                </select><br><br>
+                <label>Pizza Topping;</label>
+                <select class="form-control" id="topping">
+                    <option>SELECT PIZZA TOPPING </option><br>
+                    <option value="Peperonni">PEPERONNI </option>
+                    <option value="Sausage">SAUSAGE </option>
+                    <option value="Chicken">CHICKEN </option>
+                </select><br><br>
+                <input type="submit" class="btn btn-warning btn-rounded waves-effect btn-lg" id="totalCost"
+                value="Check Out!!!">
+            </form>
+            <div id="textPrice">
+                <P id="tc">Total Cost</P>
+            </div>
+            <button id="delivery" type="button" class="btn btn-warning btn-rounded waves-effect btn-lg">Delivery</button>
         </div>
-      </form>
-
-      <form id= "delive">
-    <div class="radio">
-      <h1>Delivery</h1>
-      <p>Do you want your pizza to be delivered?</p>
-      <label><input type="radio" name="optradio" checked>Yes</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">No</label>
-    </div>
-  </form>
-    </div>
-
-    <button type="button" class="btn btn-primary btn-block">Button 1</button>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/scripts.js">
-
-</script>
-  </body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+</body>
 </html>
