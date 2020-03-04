@@ -23,14 +23,14 @@ var number = $('#number').val();
 // console.log(crust);
 // console.log(toppings);
 var order = new Order(size, crust, toppings, number);
-console.log(order.total());
-$(document).ready(function () {
-    $("#delivery").click(function () {
-        prompt("Name")
-        prompt("Location")
-        alert("Thank you for Your Purchase!Your order will be delivered to your location")
-    });
-});
+// console.log(order.total());
+
+// console.log(order.add());
+// if (delivery ===1){
+//   alert(order.Order());
+//   alert('your bill is'+ order.total());
+document.getElementById("tt").innerHTML = new Order();
+document.getElementById("mm").innerHTML= order.total()
 
 });
 });

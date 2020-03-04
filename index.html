@@ -2,45 +2,99 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    <title>Pizza Order</title>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA compatible" content="ie="edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <title></title>
   </head>
   <body>
-    <p>Select Pizza Size</p>
-    <form>
-    XL($100) <input type="radio" name="size" value="100" id="XL"/>
-    Large($80) <input type="radio" name="size" value="80" id="Large"/>
-    Medium($60)  <input type="radio" name="size" value="60" id="Medium">
-    Small($40) <input type="radio" name="size" value="40" id="Small">
-      <p>Select Crust</p>
-    Thin ($10) <input type="checkbox" name="crust" value="10">
-    Flatbread ($10) <input type="checkbox" name="crust" value="10">
-    Foccacia($10)  <input type="checkbox" name="crust" value="10">
-    Custom($10)   <input type="checkbox" name="crust" value="10">
-    Gluten Free($10)  <input type="checkbox" name="crust" value="10">
-      <p>Select Topping</p>
-    Pepperoni($20)  <input type="checkbox" name="Topping" value="20">
-    Mushrooms($20) <input type="checkbox" name="Topping" value="20">
-    Onions($20)  <input type="checkbox" name="Topping" value="20">
-    Sausage($20) <input type="checkbox" name="Topping" value="20">
-    Bacon($20) <input type="checkbox" name="Topping" value="20">
-    Black Olives($20)  <input type="checkbox" name="Topping" value="blackolives">
-    Green Peppers($20)  <input type="checkbox" name="Topping" value="greenpeppers">
-    <p>How many pizzas do you want?</p>
-    Number of Pizzas <input type="number" id="number">
-    <p>Do you want the pizza delivered at your place?</p>
-  Yes <input type="radio" name="delivery" value="yes" id="yes">
-  No <input type="radio" name="delivery" value="No" id="no">
-  <br>
-  <input type="submit" name="" value="submit">
+    <header id="landingpage">
+   
+    <h1>WELCOME</h1>
+    <h1>TO VIV PIZZAS</h1>
+    <p>WE MAKE THE BEST PIZZAS IN TOWN</p>
+    </header>
+    <section id="sectione">
+    <h1>ABOUT US</h1>
+    <div class="container-fluid">
+        <div class="container" id="menu">
+            <h2 class="p-5">How to place an order</h2>
+            <div class="card-deck">
+                <div class="card col-lg-4 col-sm-1">
+                    <div class = "card-body">
+                    <p> <b>Pizza Size </b> <br>
+                        We offer small, medium, large and extra large pizza sizes
+                    </p>
+                    </div>
+                    </div>
 
-    </form>
+                                <div class="card col-lg-4 col-sm-1">
+                                    <div class = "card-body">
+                                    <p> <b>Crust</b> <br>
+                                       Select from the list of our crusts
+                                    </p>
+                                    </div>
+                                    </div>
+                
+
+                                <div class="card col-lg-4 col-sm-1">
+                                    <div class = "card-body">
+                                    <b>Select  Toppings</b> <br>
+                                      Input number of pizzas
+                                    </p>
+                                    </div>
+                                    </div>
+
+                                    <section>
+
+
+                                            <section>
+                                                <p>Place an Order</p>
+                                                <form>
+                                                XL($100) <input type="radio" name="size" value="100" id="XL"/>
+                                                Large($80) <input type="radio" name="size" value="80" id="Large"/>
+                                                Medium($60)  <input type="radio" name="size" value="60" id="Medium">
+                                                Small($40) <input type="radio" name="size" value="40" id="Small">
+                                                <p>Select Crust</p>
+                                                Thin ($10) <input type="checkbox" name="crust" value="10">
+                                                Flatbread ($10) <input type="checkbox" name="crust" value="10">
+                                                Foccacia($10)  <input type="checkbox" name="crust" value="10">
+                                                Custom($10)   <input type="checkbox" name="crust" value="10">
+                                                Gluten Free($10)  <input type="checkbox" name="crust" value="10">
+                                                <p>Select Topping</p>
+                                                Pepperoni($20)  <input type="checkbox" name="Topping" value="20">
+                                                Mushrooms($20) <input type="checkbox" name="Topping" value="20">
+                                                Onions($20)  <input type="checkbox" name="Topping" value="20">
+                                                Sausage($20) <input type="checkbox" name="Topping" value="20">
+                                                Bacon($20) <input type="checkbox" name="Topping" value="20">
+                                                Black Olives($20)  <input type="checkbox" name="Topping" value="blackolives">
+                                                Green Peppers($20)  <input type="checkbox" name="Topping" value="greenpeppers">
+                                                <p>How many pizzas do you want?</p>
+                                                Number of Pizzas <input type="number" id="number">
+                                                <p>Do you want the pizza delivered at your place?</p>
+                                            Yes <input type="radio" onclick="prompt(where do you want us to deliver the pizza?)"   name="delivery" value="yes" id="yes">
+                                            No <input type="radio" name="delivery" value="No" id="no">
+                                            <br>
+                                            <input type="submit" name="" value="submit">
+                                            
+                                                </form>
+                                                </section>
+                                                <p id="tt">you have ordered pizza, crust and toppings</p>
+                                                <p id="mm"></p>
+                                            </div>
+                                                <script src="js/script.js">
+                                                </script>
+
+
+
     <p id="tt">you have ordered</p>
     <p id="mm"></p>
-    <script src="js/scripts.js">
+    <script src="js/script.js">
     </script>
+ 
   </body>
 </html>
