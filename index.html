@@ -1,51 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pizza Munchy</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA compatible" content="ie="edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Special+Elite&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div id="order">
-            <hr>
-            <form>
-                <label>Pizza Size:</label>
-                <select class="form-control" id="size">
-                    <option>SELECT PIZZA SIZE </option><br>
-                    <option value="Large">LARGE KSH 600</option>
-                    <option value="Medium">MEDIUM KSH 500</option>
-                    <option value="Small">SMALL KSH 300 </option>
-                </select><br><br>
-                <label>Pizza Crust:</label>
-                <select class="form-control" id="crust">
-                    <option>SELECT PIZZA CRUST </option><br>
-                    <option value="Crispy">CRISPY </option>
-                    <option value="Stuffed">STUFFED </option>
-                    <option value="Glutten-free">GLUTEN FREE </option>
-                </select><br><br>
-                <label>Pizza Topping;</label>
-                <select class="form-control" id="topping">
-                    <option>SELECT PIZZA TOPPING </option><br>
-                    <option value="Peperonni">PEPERONNI </option>
-                    <option value="Sausage">SAUSAGE </option>
-                    <option value="Chicken">CHICKEN </option>
-                </select><br><br>
-                <input type="submit" class="btn btn-warning btn-rounded waves-effect btn-lg" id="totalCost"
-                value="Check Out!!!">
-            </form>
-            <div id="textPrice">
-                <P id="tc">Total Cost</P>
-            </div>
-            <button id="delivery" type="button" class="btn btn-warning btn-rounded waves-effect btn-lg">Delivery</button>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <title></title>
+  </head>
+  <body>
+    <header id="landingpage">
+   
+    <h1>WELCOME</h1>
+    <h1>TO VIV PIZZAS</h1>
+    <p>WE MAKE THE BEST PIZZAS IN TOWN</p>
+    </header>
+    <section id="sectione">
+    <h1>ABOUT US</h1>
+    <div class="container-fluid">
+        <div class="container" id="menu">
+            <h2 class="p-5">How to place an order</h2>
+            <div class="card-deck">
+                <div class="card col-lg-4 col-sm-1">
+                    <div class = "card-body">
+                    <p> <b>Pizza Size </b> <br>
+                        We offer small, medium, large and extra large pizza sizes
+                    </p>
+                    </div>
+                    </div>
+
+                                <div class="card col-lg-4 col-sm-1">
+                                    <div class = "card-body">
+                                    <p> <b>Crust</b> <br>
+                                       Select from the list of our crusts
+                                    </p>
+                                    </div>
+                                    </div>
+                
+
+                                <div class="card col-lg-4 col-sm-1">
+                                    <div class = "card-body">
+                                    <b>Select  Toppings</b> <br>
+                                      Input number of pizzas
+                                    </p>
+                                    </div>
+                                    </div>
+
+                                    <section>
+
+
+                                            <section>
+                                                <p>Place an Order</p>
+                                                <form>
+                                                XL($100) <input type="radio" name="size" value="100" id="XL"/>
+                                                Large($80) <input type="radio" name="size" value="80" id="Large"/>
+                                                Medium($60)  <input type="radio" name="size" value="60" id="Medium">
+                                                Small($40) <input type="radio" name="size" value="40" id="Small">
+                                                <p>Select Crust</p>
+                                                Thin ($10) <input type="checkbox" name="crust" value="10">
+                                                Flatbread ($10) <input type="checkbox" name="crust" value="10">
+                                                Foccacia($10)  <input type="checkbox" name="crust" value="10">
+                                                Custom($10)   <input type="checkbox" name="crust" value="10">
+                                                Gluten Free($10)  <input type="checkbox" name="crust" value="10">
+                                                <p>Select Topping</p>
+                                                Pepperoni($20)  <input type="checkbox" name="Topping" value="20">
+                                                Mushrooms($20) <input type="checkbox" name="Topping" value="20">
+                                                Onions($20)  <input type="checkbox" name="Topping" value="20">
+                                                Sausage($20) <input type="checkbox" name="Topping" value="20">
+                                                Bacon($20) <input type="checkbox" name="Topping" value="20">
+                                                Black Olives($20)  <input type="checkbox" name="Topping" value="blackolives">
+                                                Green Peppers($20)  <input type="checkbox" name="Topping" value="greenpeppers">
+                                                <p>How many pizzas do you want?</p>
+                                                Number of Pizzas <input type="number" id="number">
+                                                <p>Do you want the pizza delivered at your place?</p>
+                                            Yes <input type="radio" onclick="prompt(where do you want us to)"   name="delivery" value="yes" id="yes">
+                                            No <input type="radio" name="delivery" value="No" id="no">
+                                            <br>
+                                            <input type="submit" name="" value="submit">
+                                            
+                                                </form>
+                                                </section>
+                                                <p id="tt">you have ordered pizza, crust and toppings</p>
+                                                <p id="mm"></p>
+                                            </div>
+                                                <script src="js/script.js">
+                                                </script>
+
+
+
+    <p id="tt">you have ordered</p>
+    <p id="mm"></p>
+    <script src="js/script.js">
+    </script>
+ 
+  </body>
 </html>
