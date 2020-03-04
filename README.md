@@ -26,7 +26,7 @@ The website is expected to function as follows:
 
 ## Support and contact details
 
-For any questions,concerns or collaboration enquiries  ,please feel free to contact me through my email adress:Ndundirokamau@gmail.com
+For any questions,concerns or collaboration enquiries  ,please feel free to contact me through my email adress:
 
 ## Licence
 MIT Licence. Copyright (c) 2020 vivian njeri
