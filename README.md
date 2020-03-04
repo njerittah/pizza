@@ -26,7 +26,7 @@ The website is expected to function as follows:
 
 ## Support and contact details
 
-For any questions,concerns or collaboration enquiries  ,please feel free to contact me through my email adress:
+For any questions,concerns or collaboration enquiries  ,please feel free to contact me through my email adress:vivianbianca92@gmail.com
 
 ## Licence
 MIT Licence. Copyright (c) 2020 vivian njeri
